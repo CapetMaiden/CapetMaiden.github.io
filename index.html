@@ -5,158 +5,177 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Assignment Solution for Module 2</title>
 	<style>
-    
-    /************** Base Styles *************/
-    * {
-      /*box-sizing: border-box;	*/
-    }
-    h1 {
-    	margin: 50px;
-    	text-align: center;
-    }
 
-    p {
-    	box-sizing: border-box;
-    	border: 1px solid black;
-    	width: 30%;
-    	height: 250px;
-    	float: left;
-    	margin-right: 40px;
-    	margin-left: auto;
-    	background-color: wheat;
-    	text-align: center;
-    	overflow: auto;
-    }
 
-    #box1 {
-    	box-sizing: content-box;
-    	width: 10%;
-    	height: 10px;
-    	background-color: turquoise;
-    	border: 1px solid black;
+/*************** Base Styles ******************/
 
-    }
+h1 {
+	margin: 60px;
+	justify-content: center;
+}	
 
-    #p1 {
+div{
+	align-content: center;
+}
 
-    }
+#box1 {
+	box-sizing: border-box;
+	background-color: wheat;
+	border: 1px solid black;
+	width: 30%;
+	height: 225px;
+	float: left;
+	padding-left: 10px;
+	padding-bottom: 30px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	overflow: auto;	
+}
 
-    #p2 {
-  
-    }
-
-    #p3 {
-   
-    }
-
-    /* Simple Responsive Framework. */
-    .row {
-      width: 90%;
-      align-content: center;
-    }
-
-/********** Large devices only **********/
-@media (min-width: 992px) .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 1px solid black;
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
+#box2 {
+	box-sizing: border-box;
+	background-color: wheat;
+	border: 1px solid black;
+	width: 30%;
+	height: 225px;
+	float: left;
+	padding-left: 10px;
+	padding-bottom: 30px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	overflow: auto;	
 }
 
 
+#box3 {
+	box-sizing: border-box;
+	background-color: wheat;
+	border: 1px solid black;
+	width: 30%;
+	height: 225px;
+	float: left;
+	padding-left: 10px;
+	padding-bottom: 30px;
+	margin-right: 40px;
+	overflow: auto;	
+}
+
+
+#title1 {
+	border: 1px solid black;
+	width: 25%;
+	height: 25px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: 0px;
+	left: 75%;
+	background-color: red;
+}
+
+#title2 {
+	border: 1px solid black;
+	width: 25%;
+	height: 25px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: 0px;
+	left: 75%;
+	background-color: turquoise;
+	align-content: right;
+
+}
+
+#title3 {
+	border: 1px solid black;
+	width: 25%;
+	height: 25px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: 0px;
+	left: 75%;
+	background-color: grey;
+	align-content: right;
+
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	#box1 {
+		width: 30%;
+	}
+	#box2 {
+		width: 30%;
+	}
+	#box3 {
+		width: 30%;
+	}
+ }
+
+
 /********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-	#p1 {
+@media (min-width: 991px) and (max-width: 768px) {
+	#box1 {
 		width: 50%;
 	}
-	#p2 {
+	#box2 {
 		width: 50%;
 	}
-	#p3 {
+	#box3 {
+		width: 350px;
+		height: 225px;
+	}
+
+}
+
+/*********** Small devices only ************/
+@media (max-width: 767px) {
+	#box1 {
 		width: 100%;
 	}
-  }
-  
-
-  /**************Small devices only ***********/
-
- @media (max-width: 767px) {
- 	#p1 {
- 		width: 100%;
- 	}
- 	#p2 {
- 		width: 100%;
- 	}
- 	#p3 {
- 		width: 100%;
- 	}
- }
-  
+	#box2 {
+		width: 100%;
+	}
+	#box3 {
+		width: 100%;
+	}
+}
 
 </style>
 </head>
 <body>
-<h1>Our Menu</h1>
+<h1 style="text-align: center;">Our Menu</h1>
 
-<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  
+<div class="row">
+	<div id="box1">
+	<h2 id="title1">Chicken</h2>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!
+</div>
 
-<p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div id="box2">
+	<h2 id="title2">Beef</h2>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!
+</div>
 
+<div id="box3">
+	<h2 id="title3">Sushi</h2>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!
+</div>
 
 </div>
 
 </body>
 </html>
+
+
+    
+   
