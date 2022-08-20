@@ -1,181 +1,127 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Assignment Solution for Module 2</title>
-	<style>
-
-
-/*************** Base Styles ******************/
-
-h1 {
-	margin: 60px;
-	justify-content: center;
-}	
-
-div{
-	align-content: center;
-}
-
-#box1 {
-	box-sizing: border-box;
-	background-color: wheat;
-	border: 1px solid black;
-	width: 30%;
-	height: 225px;
-	float: left;
-	padding-left: 10px;
-	padding-bottom: 30px;
-	margin-right: 40px;
-	margin-bottom: 20px;
-	overflow: auto;	
-}
-
-#box2 {
-	box-sizing: border-box;
-	background-color: wheat;
-	border: 1px solid black;
-	width: 30%;
-	height: 225px;
-	float: left;
-	padding-left: 10px;
-	padding-bottom: 30px;
-	margin-right: 40px;
-	margin-bottom: 20px;
-	overflow: auto;	
-}
-
-
-#box3 {
-	box-sizing: border-box;
-	background-color: wheat;
-	border: 1px solid black;
-	width: 30%;
-	height: 225px;
-	float: left;
-	padding-left: 10px;
-	padding-bottom: 30px;
-	margin-right: 40px;
-	overflow: auto;	
-}
-
-
-#title1 {
-	border: 1px solid black;
-	width: 25%;
-	height: 25px;
-	margin: 0px;
-	padding: 0px;
-	position: relative;
-	top: 0px;
-	left: 75%;
-	background-color: red;
-}
-
-#title2 {
-	border: 1px solid black;
-	width: 25%;
-	height: 25px;
-	margin: 0px;
-	padding: 0px;
-	position: relative;
-	top: 0px;
-	left: 75%;
-	background-color: turquoise;
-	align-content: right;
-
-}
-
-#title3 {
-	border: 1px solid black;
-	width: 25%;
-	height: 25px;
-	margin: 0px;
-	padding: 0px;
-	position: relative;
-	top: 0px;
-	left: 75%;
-	background-color: grey;
-	align-content: right;
-
-}
-
-
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
-
-/********** Large devices only **********/
-@media (min-width: 992px) {
-	#box1 {
-		width: 30%;
-	}
-	#box2 {
-		width: 30%;
-	}
-	#box3 {
-		width: 30%;
-	}
- }
-
-
-/********** Medium devices only **********/
-@media (min-width: 991px) and (max-width: 768px) {
-	#box1 {
-		width: 50%;
-	}
-	#box2 {
-		width: 50%;
-	}
-	#box3 {
-		width: 350px;
-		height: 225px;
-	}
-
-}
-
-/*********** Small devices only ************/
-@media (max-width: 767px) {
-	#box1 {
-		width: 100%;
-	}
-	#box2 {
-		width: 100%;
-	}
-	#box3 {
-		width: 100%;
-	}
-}
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale1">
+  <title>Module 3 Assignment</title>
+  <link rel="stylesheet"  href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-<h1 style="text-align: center;">Our Menu</h1>
+  <header>
+    <nav id= "header-nav" class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" class="pull-left visible -md visible-lg">
+        <h1>Food LLC</h1>
+      </a>
+    
+  
+
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+        
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div id="collapsable-nav" class="collapse navbar-collapse">
+      <ul id="nav-list" class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#" class="visible-xs">Chicken</a> 
+        </li>
+        <li>
+          <a href="#" class="visible-xs">Beef</a> 
+        </li>
+        <li>
+          <a href="#" class="visible-xs">Sushi</a> 
+        </li>
+        
+      </ul>
+
+    </div>
+    </div>
+      
+    </div>
 
 
-<div class="row">
-	<div id="box1">
-	<h2 id="title1">Chicken</h2>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!
-</div>
+</nav>
+  </header>
 
-<div id="box2">
-	<h2 id="title2">Beef</h2>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!
-</div>
 
-<div id="box3">
-	<h2 id="title3">Sushi</h2>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!
-</div>
 
-</div>
+      <div id="main content">
+    <div class="container-fluid">
+      <div class="jumbotron">
 
+
+        <div id="menu-categories" class="row">
+      <div class="col-xs-12">
+        <a href="#"><span><p class="text-center">Chicken</p></span></div></a><hr class="visible-xs">
+      </div>
+
+      <div id="menu-categories" class="row">
+      <div class="col-xs-12">
+        <a href="#"><span><p class="text-center">Beef</p></span></div></a><hr class="visible-xs">
+      </div>
+
+      <div id="menu-categories" class="row">
+      <div class="col-xs-12">
+        <a href="#"><span><p class="text-center">Sushi</p></span></div></a><hr class="visible-xs">
+      </div>
+
+      <div id="main content">
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h2><p class="text-center">Our Menu</p></h2>
+
+        <section class="row">
+          <div id="menu-categories">
+          <div class="container">
+      <div class="jumbotron">
+
+      <div class="menu-item-tile col-xs-12">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="menu-item-description col-xs-12">
+  <h3 class="menu-item-title"><p class="text-center">Chicken</p></h3>
+    <p class="menu-item-details"><p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+    </div>
+        </div>
+      </div>
+
+      <div class="menu-item-tile col-xs-12">
+        <div class="row">
+          <div class="col-xs-12">
+              <h3 class="menu-item-title"><p class="text-center">Beef</p></h3>
+            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item-tile col-xs-12">
+        <div class="row">
+          <div class="col-xs-12">
+             <div class="menu-item-description col-xs-12">
+            <h3 class="menu-item-title"><p class="text-center">Sushi</p></h3>
+            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+          </div>
+        </div>
+      </div>
+
+
+       </div>
+      </div>
+      
+    
+    
+  </div>
+</body>
+
+ <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
-
-
-    
-   
